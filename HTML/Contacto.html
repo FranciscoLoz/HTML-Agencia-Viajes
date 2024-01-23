@@ -13,7 +13,7 @@
     <title>Contactanos</title>
 </head>
 <body>
-    <header>
+    <header class="speaker-form-header">
         <h1>Contactanos</h1>
 
         <nav>
@@ -33,7 +33,7 @@
     <p>¿Tienes alguna duda? ¿Has tenido algun problema en uno de nuestros viajes? ¡Ponte en contacto con nosotros aqui!</p>
 </section>
 <br>
-<form action='' method='get' class=ContactoInfo>
+<form action='' method='get' class='ContactoInfo'>
     <div class='form-row'>
         <label for='nombre'>Nombre Completo: </label>
         <input id='nombre' name='nombre' type='text' placeholder="Ej: Maria Millán Gamero"/>
@@ -45,6 +45,16 @@
             name='email'
             type='email'
             placeholder='MariaDeQueQuieresLaTostada@example.com'/>
+    </div>
+
+    <div class='form-row'>
+        <label for='abstract'>Texto: </label>
+        <textarea id='abstract' name='abstract'></textarea>
+        <div class='instructions'>Describe tu problema, en un mensaje corto y conciso</div>
+    </div>
+    
+    <div class='form-row'>
+        <button>Enviar</button>
     </div>
 </form>
 
