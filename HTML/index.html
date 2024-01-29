@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Zelda -->
+    <!-- Zeldas -->
     <link rel="stylesheet" href="../CSS/Mainstyles.css">
     <link rel="stylesheet" href="../CSS/Carrusel.css">
     <link rel="shortcut icon" href="../Pictures/famicon.png">
@@ -15,8 +15,8 @@
 <body>
     <header>
         <h1>Justravel!</h1>
+        <img id="logo" src="../Pictures/logo.jpg" alt="logo">
         <nav>
-            <a href="index.html"> <img id="logo" src="../Pictures/logo.jpg" alt="logo"> </a>
             <a href="index.html">Inicio</a>
             <a href="Destinos.html">Destinos</a>
             <a href="Pack.html">Kits de viaje</a>
@@ -31,13 +31,68 @@
         <!-- Agregar más contenido sobre viajes aquí -->
     </section>
     <br>
-    <div id="carrusel">
-        <figure>
-            <img src="../Pictures/imagen1.jpg" alt="Sevilla">
-            <img src="../Pictures/imagen2.jpg" alt="San Francisco">
-            <img src="../Pictures/imagen3.jpg" alt="Japon">
-        </figure>
-    </div>
+    <section class="carousel">
+        <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper">
+                <a href="#carousel__slide4"
+                    class="carousel__prev">Ultima diapositiva</a>
+                <a href="#carousel__slide2"
+                    class="carousel__next">Siguiente diapositiva</a>
+            </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1"
+                class="carousel__prev">Anterior diapositiva</a>
+            <a href="#carousel__slide3"
+                class="carousel__next">Siguiente diapositiva</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2"
+                class="carousel__prev">Anterior diapositiva</a>
+            <a href="#carousel__slide4"
+                class="carousel__next">Siguiente diapositiva</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3"
+                class="carousel__prev">Anterior diapositiva</a>
+            <a href="#carousel__slide1"
+                class="carousel__next">Primera diapositiva</a>
+            </li>
+        </ol>
+        <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                    class="carousel__navigation-button">Ir a la imagen 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                    class="carousel__navigation-button">Ir a la imagen 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                    class="carousel__navigation-button">Ir a la imagen 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                    class="carousel__navigation-button">Ir a la imagen 4</a>
+            </li>
+            </ol>
+        </aside>
+    </section>
+
     <footer>
         <p>&copy; 2024 Fco Lozano González - 1º DAW</p>
     </footer>
