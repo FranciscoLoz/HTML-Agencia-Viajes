@@ -5,97 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Zeldas -->
+    <!-- Enlace al archivo de estilos -->
     <link rel="stylesheet" href="../CSS/Mainstyles.css">
-    <link rel="stylesheet" href="../CSS/Carrusel.css">
-    <link rel="shortcut icon" href="../Pictures/famicon.png">
 
+    <!-- Título de la página y favicon -->
     <title>Justravel!</title>
+    <link rel="shortcut icon" href="../Pictures/famicon.png">
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
-        <h1>Justravel!</h1>
+        <!-- Logo -->
         <img id="logo" src="../Pictures/logo.jpg" alt="logo">
+        <!-- Título -->
+        <h1>Justravel!</h1>
+        <!-- Navegación -->
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="Destinos.html">Destinos</a>
             <a href="Pack.html">Kits de viaje</a>
             <a href="Productos.html">Productos</a>
             <a href="Contacto.html">Contacto</a>
+            <a href="about.html">Sobre nosotros</a>
         </nav>
+        <div class="login-buttons">
+            <a href="login.html" class="btn">Iniciar Sesión</a>
+            <a href="login.html" class="btn">Registrarse</a>
+        </div>
     </header>
-    <br>
+
+    <!-- Sección principal -->
     <section>
+        <!-- Texto de bienvenida -->
         <h2>Bienvenido a Justravel!</h2>
         <p>Descubre los destinos más emocionantes y planifica tu próximo viaje con nosotros.</p>
-        <!-- Agregar más contenido sobre viajes aquí -->
-    </section>
-    <br>
-    <section class="carousel">
-        <ol class="carousel__viewport">
-            <li id="carousel__slide1"
-                tabindex="0"
-                class="carousel__slide">
-            <div class="carousel__snapper">
-                <a href="#carousel__slide4"
-                    class="carousel__prev">Ultima diapositiva</a>
-                <a href="#carousel__slide2"
-                    class="carousel__next">Siguiente diapositiva</a>
+
+        <!-- Carrusel de destinos -->
+        <div class="carrusel">
+            <div class="destino" id="sevilla">
+                <img src="../Pictures/imagen1.jpg" alt="Sevilla">
+                <div class="info">
+                    <h3>Sevilla</h3>
+                    <p>Desde 125€</p>
+                </div>
             </div>
-            </li>
-            <li id="carousel__slide2"
-                tabindex="0"
-                class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide1"
-                class="carousel__prev">Anterior diapositiva</a>
-            <a href="#carousel__slide3"
-                class="carousel__next">Siguiente diapositiva</a>
-            </li>
-            <li id="carousel__slide3"
-                tabindex="0"
-                class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide2"
-                class="carousel__prev">Anterior diapositiva</a>
-            <a href="#carousel__slide4"
-                class="carousel__next">Siguiente diapositiva</a>
-            </li>
-            <li id="carousel__slide4"
-                tabindex="0"
-                class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide3"
-                class="carousel__prev">Anterior diapositiva</a>
-            <a href="#carousel__slide1"
-                class="carousel__next">Primera diapositiva</a>
-            </li>
-        </ol>
-        <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
-                <a href="#carousel__slide1"
-                    class="carousel__navigation-button">Ir a la imagen 1</a>
-            </li>
-            <li class="carousel__navigation-item">
-                <a href="#carousel__slide2"
-                    class="carousel__navigation-button">Ir a la imagen 2</a>
-            </li>
-            <li class="carousel__navigation-item">
-                <a href="#carousel__slide3"
-                    class="carousel__navigation-button">Ir a la imagen 3</a>
-            </li>
-            <li class="carousel__navigation-item">
-                <a href="#carousel__slide4"
-                    class="carousel__navigation-button">Ir a la imagen 4</a>
-            </li>
-            </ol>
-        </aside>
+            <div class="destino" id="san-francisco">
+                <img src="../Pictures/imagen2.jpg" alt="San Francisco">
+                <div class="info">
+                    <h3>San Francisco</h3>
+                    <p>Desde 580€</p>
+                </div>
+            </div>
+            <div class="destino" id="japon">
+                <img src="../Pictures/imagen3.jpg" alt="Japón">
+                <div class="info">
+                    <h3>Japón</h3>
+                    <p>Desde 899€</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2024 Fco Lozano González - 1º DAW</p>
     </footer>
 </body>
 </html>
-

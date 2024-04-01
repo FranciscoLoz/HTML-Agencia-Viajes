@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Zeldas -->
+    <!-- Enlaces a los archivos de estilos -->
     <link rel="stylesheet" href="../CSS/Formulario.css">
     <link rel="stylesheet" href="../CSS/Mainstyles.css">
     <link rel="shortcut icon" href="../Pictures/famicon.png">
@@ -13,50 +13,55 @@
     <title>Contactanos</title>
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <h1>Contactanos</h1>
         <img id="logo" src="../Pictures/logo.jpg" alt="logo">
+        <!-- Navegación -->
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="Destinos.html">Destinos</a>
             <a href="Pack.html">Kits de viaje</a>
             <a href="Productos.html">Productos</a>
             <a href="Contacto.html">Contacto</a>
+            <a href="about.html">Sobre Nosotros</a>
         </nav>
+        <div class="login-buttons">
+            <a href="login.html" class="btn">Iniciar Sesión</a>
+            <a href="login.html" class="btn">Registrarse</a>
+        </div>
     </header>
-<br>
 
-<section>
-    <p>¿Tienes alguna duda? ¿Has tenido algun problema en uno de nuestros viajes? ¡Ponte en contacto con nosotros aqui!</p>
-</section>
-<br>
-<form action='' method='get' class='ContactoInfo'>
-    <div class='form-row'>
-        <label for='nombre'>Nombre Completo: </label>
-        <input id='nombre' name='nombre' type='text' placeholder="Ej: Maria Millán Gamero"/>
-    </div>
+    <!-- Sección principal -->
+    <section>
+        <p>¿Tienes alguna duda? ¿Has tenido algún problema en uno de nuestros viajes? ¡Ponte en contacto con nosotros aquí!</p>
+    </section>
 
-    <div class='form-row'>
-        <label for='email'>Email: </label>
-        <input id='email'
-            name='email'
-            type='email'
-            placeholder='MariaDeQueQuieresLaTostada@example.com'/>
-    </div>
+    <!-- Formulario de contacto -->
+    <form action='' method='get' class='ContactoInfo'>
+        <div class='form-row'>
+            <label for='nombre'>Nombre Completo: </label>
+            <input id='nombre' name='nombre' type='text' placeholder="Ej: Maria Millán Gamero"/>
+        </div>
 
-    <div class='form-row'>
-        <label for='abstract'>Texto: </label>
-        <textarea id='abstract' name='abstract'></textarea>
-        <div class='instructions'>Describe tu problema, en un mensaje corto y conciso</div>
-    </div>
-    
-    <div class='form-row'>
-        <button>Enviar</button>
-    </div>
-</form>
+        <div class='form-row'>
+            <label for='email'>Email: </label>
+            <input id='email' name='email' type='email' placeholder='MariaDeQueQuieresLaTostada@example.com'/>
+        </div>
 
-<footer>
-    <p>&copy; 2024 Fco Lozano González - 1º DAW</p>
-</footer>
+        <div class='form-row'>
+            <label for='abstract'>Texto: </label>
+            <textarea id='abstract' name='abstract'></textarea>
+            <div class='instructions'>Describe tu problema, en un mensaje corto y conciso</div>
+        </div>
+        
+        <div class='form-row'>
+            <button>Enviar</button>
+        </div>
+    </form>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Fco Lozano González - 1º DAW</p>
+    </footer>
 </body>
 </html>

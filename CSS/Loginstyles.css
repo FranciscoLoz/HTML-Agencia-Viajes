@@ -1,0 +1,68 @@
+/* Estilos para la página de inicio de sesión */
+
+/* Fuente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Fondo y color de texto */
+body {
+    background-color: #0e2941;
+    color: #fff;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #002b52; /* Fondo azul */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para los inputs y el botón */
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Ajuste para el padding */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco */
+    margin-top: 5px; /* Ajuste para el margen del input */
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #002b52;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #003976;
+}
+
+/* Estilos para el enlace de registro */
+p {
+    text-align: center;
+}
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+a:hover {
+    color: #ccc;
+}
+

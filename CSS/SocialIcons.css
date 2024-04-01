@@ -1,0 +1,39 @@
+/* Estilos para los botones de redes sociales */
+
+/* Contenedor de botones */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los botones individuales */
+.social-buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de Facebook */
+.facebook {
+    background-color: #3b5998; /* Azul de Facebook */
+}
+
+/* Estilos para el botón de Instagram */
+.instagram {
+    background-color: #8a3ab9; /* Morado de Instagram */
+}
+
+/* Estilos para el botón de Twitter */
+.twitter {
+    background-color: #1da1f2; /* Azul claro de Twitter */
+}
+
+/* Estilos para el botón de YouTube */
+.youtube {
+    background-color: #ff0000; /* Rojo de YouTube */
+}
